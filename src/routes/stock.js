@@ -30,7 +30,6 @@ router.get('/', (req, res) => {
     })
 })
 
-
 router.get('/:id', (req, res) => {
   db.query('SELECT * FROM stocks where id=?', [req.params.id])
     .then(results => {
@@ -56,7 +55,6 @@ router.get('/:id', (req, res) => {
       })
     })
 })
-
 
 router.post('/', async (req,res) => {
   var denree = null

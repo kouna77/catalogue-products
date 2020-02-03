@@ -30,7 +30,6 @@ router.get('/', function (req, res) {
     })
 })
 
-
 router.get('/:id',function (req, res) {
   db.query('SELECT * FROM denrees where id_denree=?', [req.params.id])
     .then(results => {
@@ -57,7 +56,6 @@ router.get('/:id',function (req, res) {
     })
 })
 
-
 router.post('/', async function(req,res){
   let params=[req.body.libelle];
   db.query('INSERT INTO denrees (libelle) values(?)',params)
@@ -81,7 +79,6 @@ router.post('/', async function(req,res){
       })
     })
 })
-
 
 router.put('/:id',async function(req,res){
   try {
