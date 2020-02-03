@@ -3,11 +3,7 @@ node_modules/
 
 # next.js build output
 .idea
-.vs
-.vscode
 yarn-error.log
 .env
-**/*___jb_old___
-**/*___jb_tmp___
 package-lock.json
 yarn.lock
